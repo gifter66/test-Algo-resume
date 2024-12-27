@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        /*利用通用选择器，清楚所有标签的默认边距*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*为body元素调整内边距，并设置全屏渐变的效果*/
+        body {
+            padding: 100px 6%;
+            background: linear-gradient(to right top, #ff1943, #2980b9);
+        }
+        /*为container设置弹性盒子，调整布局*/
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        /*设置左半部分的样式*/
+        .profile {
+            padding:20px 30px;
+            height: 230px;
+            background-color: #f2f2f2;
+            border-radius: 10px 0 0 10px;
+            flex:1 1 400px;
+            text-align:center;
+            position:sticky;
+            top:20px;
+            /*右边框的粗细，样式，颜色为2像素，直线和#333333*/
+            border-right: 2px solid #333333;
+        }
+        /*简历左半部分三级标题样式*/
+        .profile h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        /*简历左半部分二级标题样式*/
+       .profile p {
+            margin-bottom: 16px;
+            font-size: 15px;
+            font-weight: 400;
+            color:#2980b9;
+        }
+        /*设置【下载简历】与【发送面试邀请】样式*/
+        .btn {
+            display: inline-block;
+            padding: 70px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #2980b9;
+        }
+        /*设置【下载简历】与【发送面试邀请】的鼠标悬停样式*/
+       .btn:hover {
+            background-color: #333333;
+        }
+        
+    </style>
+</head>
+<body>
+  <!--简历整体-->
+  <div class="container" >
+    <!--左半部分-->
+    <div class="profile">
+        <!--我的头像-->
+        <img src="https://iknow-pic.cdn.bcebos.com/d1a20cf431adcbef26f35a98beaf2edda2cc9f6c" alt="个人头像" width="460px" height="600px">
+        <!--algo的名字-->
+        <h3>Algo</h3>
+        <!--Algo的意向岗位-->
+        <p>前端开发</p>
+        <!--下载简历与发送面试邀请-->
+        <div class="bottons">
+            <a class="btn" href="https://img2.baidu.com/it/u=125517147,2138436154&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1091" target="_blank">下载简历</a>
+            <a class="btn" href="javascript:alert('发送成功');" target="_blank">发送面试邀请</a>
+        </div>
+    </div>
+    <!--右半部分-->
+    <div class="information">
+       <!--About me--> 
+    <div class="about">
+        <h3 class="title">About me</h3>
+        <p>我叫萧辰，小名叫辰辰，擅长使用Python，精通爬虫，可视化，数据分析，人工智能等领域</p>
+        <p>不仅如此，我还能熟练的使用前端语言独立制作电商网站，招聘网站等，这个简历也是我用html和CSS完成的哦。</p>
+        <div class="boe-container">
+            <div class="box">
+                <h3><span>年龄：</span>25</h3>
+                <h3><span>地址：</span>广东，广州</h3>
+                <h3><span>电话：</span>1234567890</h3>
+                <h3><span>邮箱：</span>Algo@qq.comAlgo@qq.com</h3>
+            </div>
+            <div class="box">
+                <h3><span>求职：</span>25</h3>
+                <h3><span>语言：</span>English</h3>
+                <h3><span>工龄：</span>1</h3>
+                <h3><span>现状：</span>随时到岗</h3>
+
+        </div>
+    </div>
+    <!--My services-->
+    <div class="services">
+        <h3 class="title">My services</h3>
+        <div class="imgbox-container">
+            <div class="box">
+                <img src="http://img1.baidu.com/it/u=2614976851,3287010776&fm=253&app=138&f=JPEG?w=800&h=800" alt="">
+                <h3>HTML 5</h3>
+            </div>
+            <div class="box">
+                <img src="https://bkimg.cdn.bcebos.com/pic/a6efce1b9d16fdfaaf510d17ccc49b5494eef11fcdbc" alt="">
+                <h3>CSS 3</h3>
+            </div>
+            <div class="box">
+                <img src="https://img0.baidu.com/it/u=98167248,1976768832&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="box">
+                <img src="https://img2.baidu.com/it/u=1729552812,1512105882&fm=253&fmt=auto&app=120&f=JPEG?w=626&h=373" alt="">
+                <h3>Python</h3>
+            </div>
+            <div class="box">
+                <img src="https://pic.rmb.bdstatic.com/bjh/news/c53971bd2f97fe11a6acc01d74bd64b4.png" alt="">
+                <h3>SQL</h3>
+            </div>
+            <div class="box">
+                <img src="https://pic.rmb.bdstatic.com/bjh/down/9ae8da55a6f43a9abde206e35a7b8742.jpeg" alt="">
+                <h3>C++</h3>
+            </div>
+        </div>
+    </div>
+    <!--My skills-->
+    <div class="skills">
+        <h3 class="title">My skills</h3>
+        <div class="box-container">
+        <div class="box">
+            <div class="progress">
+                <h3>HTML 5||<span>95%</span></h3>
+                <div class="bar"><span class="first"></span></div>
+            </div>
+            <div class="progress">
+                <h3>CSS 3||<span>85%</span></h3>
+                <div class="bar"><span class="second"></span></div>
+        </div>
+        <div class="box">
+            <div class="progress">
+                <h3>JavaScript||<span>75%</span></h3>
+                <div class="bar"><span class="third"></span></div>
+            </div>
+            <div class="progress">
+                <h3>Python||<span>85%</span></h3>
+                <div class="bar"><span class="fourth"></span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="progress">
+                <h3>SQL<span>85%</span></h3>
+                <div class="bar"><span class="fifth"></span></div>
+            </div>
+            <div class="progress">
+                <h3>C++<span>75%</span></h3>
+
+    </div>
+    <!--My Experience-->
+    <div class="experience"></div>
+    <!--Contact Info-->
+    <div class="contact"></div>
+    </div>     
+  </div> 
+</body>
+</html>
